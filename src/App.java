@@ -36,6 +36,8 @@ public class App {
                     Equipo equipo = new Equipo(nombre, victorias, derrotas, puntosFavor, puntosContra);
                     clasificacion.addEquipo(equipo);
                     System.out.println("Equipo añadido.");
+                    clasificacion.ordenarClasificacion();
+                    break;
                 
                 case 2:
                     System.out.println(clasificacion.toString());
